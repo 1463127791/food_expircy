@@ -1,0 +1,193 @@
+{
+	// 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/fridge/fridge",
+			"style" :
+			{
+			    "navigationBarTitleText": "冰箱管理",
+			    "enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/dish/dish",
+			"style" :
+			{
+			    "navigationBarTitleText": "菜谱推荐",
+			    "enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/my/my",
+			"style":{
+				"navigationBarBackgroundColor":"#1296db",
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/food/food",
+			"style":{
+			    "navigationBarTitleText": "食物管理",
+			    "enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "登录",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/addToFridge/addToFridge",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加食物到冰箱",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/foodEdit/foodEdit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "食物编辑",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/dishDetail/dishDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "菜谱详情",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/addRemind/addRemind",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加提醒",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/addNewFood/addNewFood",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加自定义食物",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/remind/remind",
+			"style" :
+			{
+			    "navigationBarTitleText": "提醒管理",
+			    "enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/editFood/editFood",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑食物",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/ModifyPass/ModifyPass",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修改密码",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/EditInfo/EditInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/fridgeManage/fridgeManage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "冰箱管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/viewFood/viewFood",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "食物详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/viewDish/viewDish",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "菜谱详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "智慧冰箱",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#bfbfbf",
+		"selectedColor":"#1296db",
+		"backgroundColor":"#FFFFFF",
+		"position":"bottom",
+		"list":[
+			{
+				"pagePath":"pages/fridge/fridge",
+				"iconPath":"static/tabbar/fridge_u.png",
+				"selectedIconPath":"static/tabbar/fridge.png",
+				"text":"冰箱"
+			},
+			{
+				"pagePath":"pages/dish/dish",
+				"iconPath":"static/tabbar/dish_u.png",
+				"selectedIconPath":"static/tabbar/dish.png",
+				"text":"菜谱"
+			},
+			{
+				"pagePath":"pages/food/food",
+				"iconPath":"static/tabbar/food_u.png",
+				"selectedIconPath":"static/tabbar/food.png",
+				"text":"食物"
+			},
+			{
+				"pagePath":"pages/remind/remind",
+				"iconPath":"static/tabbar/remind_u.png",
+				"selectedIconPath":"static/tabbar/remind.png",
+				"text":"提醒"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"iconPath":"static/tabbar/my_u.png",
+				"selectedIconPath":"static/tabbar/my.png",
+				"text":"我的"
+			}
+		]
+	}
+}
